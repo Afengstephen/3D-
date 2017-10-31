@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow: hidden;
+	background: #000;
+}
+/* 场景景深，元素被查看位置的视图 */
+#perspective{
+	perspective: 800;
+	-webkit-perspective: 800;
+}
+/* 容器 */
+#wrap{
+	position: relative;
+	width: 133px;
+	height: 200px;
+	margin: 150px auto;
+	transform-style: preserve-3d;
+	transform: rotateX(-10deg) rotateY(0deg);
+}
+#wrap img{
+	border: 4px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 0 2px #fff;
+	position: absolute;
+	top: 0;
+	transform: rotateX(0deg) rotateY(0deg);
+}
